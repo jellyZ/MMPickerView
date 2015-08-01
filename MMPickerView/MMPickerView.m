@@ -309,11 +309,11 @@ NSString * const MMshowsSelectionIndicator = @"showsSelectionIndicator";
 #pragma mark - UIPickerViewDelegate
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-  if (self.objectToStringConverter == nil) {
-    self.onDismissCompletion ([_pickerViewArray objectAtIndex:row]);
-  } else{
-    self.onDismissCompletion (self.objectToStringConverter ([self selectedObject]));
-  }
+//  if (self.objectToStringConverter == nil) {
+//    self.onDismissCompletion ([_pickerViewArray objectAtIndex:row]);
+//  } else{
+//    self.onDismissCompletion (self.objectToStringConverter ([self selectedObject]));
+//  }
 }
 
 - (id)selectedObject {
